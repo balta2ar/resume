@@ -1,0 +1,233 @@
+% LaTeX source of my resume
+% =========================
+
+% Commented for easy reuse... ;)
+
+% See the `README.md` file for more info.
+
+% This file is licensed under the CC-NC-ND Creative Commons license.
+
+
+% start a document with the here given default font size and paper size
+%\documentclass[10pt,a4paper]{article}
+%\usepackage[T2A]{fontenc}
+%\usepackage[russian,english]{babel}
+%\usepackage[utf8x]{inputenc}
+
+%\usepackage[cm-default]{fontspec}
+%\usepackage{xltxtra}
+
+%\usepackage[xetex]{graphicx}
+%\usepackage{fontspec,xunicode}
+
+%\defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+
+\documentclass[unicode, 10pt, a4paper, oneside, fleqn]{article}
+
+%\usepackage[T1]{fontenc}
+
+\usepackage{polyglossia}  %% подключает пакет многоязыкой вёрстки
+\setmainfont[Ligatures=TeX]{Liberation Serif}  %% задаёт основной шрифт документа
+%\setmainfont[Ligatures=TeX]{Linux Libertine O}  %% задаёт основной шрифт документа
+%\setmainfont{PT Serif}  %% задаёт основной шрифт документа
+%\setsansfont{Liberation Sans}  %% задаёт шрифт без засечек
+%\setmonofont{Liberation Sans Mono}  %% задаёт моноширинный шрифт
+
+%\setmainfont[Mapping=tex-text, Numbers=OldStyle, Ligatures={Common,Contextual}]{Linux Libertine O}
+
+\defaultfontfeatures{Scale=MatchLowercase, Mapping=tex-text}  %% устанавливает поведение шрифтов по умолчанию
+\setdefaultlanguage[spelling=modern]{russian}  %% устанавливает язык по умолчанию
+\setotherlanguage{english}
+
+%\fontsize{4mm}{5mm}\selectfont
+
+%\renewcommand{\normalsize}{\fontsize{12.5}{10}\selectfont}
+
+%\defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+%\setmainfont[Scale=.95]{Arial}
+%\setmonofont{DejaVu Sans}
+
+\usepackage{comment}
+
+% include the `tex` instructions that takes care of loading packages and defining commands
+\include{resume-commands}
+
+\begin{document}  % begin the content of the document
+\sloppy  % this to relax whitespacing in favour of straight margins
+
+\maintitle{Yuri Bochkarev}{May 24, 1988}  % title on top of the document
+
+\nobreakvspace{0.3em}  % add some page break averse vertical spacing
+
+% \noindent prevents paragraph's first lines from indenting
+% \mbox is used to obfuscate the email address
+% \sbull is a spaced bullet
+% \href well..
+% \\ breaks the line into a new paragraph
+\noindent\href{mailto:baltazar.dot.bz.at.gmail.dot.com}{baltazar.bz\mbox{}@\mbox{}gmail.com}\sbull
+\textsmaller{+}79853037426\sbull
+%cies010 \emph{(Skype)}\sbull
+\href{http://ru.linkedin.com/pub/yuri-bochkarev/21/3a9/555}{linkedin}
+\sbull
+\href{https://bitbucket.org/balta2ar}{bitbucket}
+\sbull
+\href{https://github.org/balta2ar}{github}
+\sbull
+\href{http://baltazar-bz.blogspot.com/}{blog}
+\\
+%Mathenesserplein 84\sbull
+%3022\thinspace {\sc ld}\sbull
+Moscow\sbull
+Russia
+\spacedhrule{0.9em}{-0.4em}  % a horizontal line with some vertical spacing before and after
+
+\roottitle{Summary}  % a root section title
+
+\vspace{-1.3em}  % some vertical spacing
+
+\begin{multicols}{2}  % open a multicolumn environment
+\noindent 
+1994 -- 2003: finished school (external studies).\\
+2003 -- 2009: got bachelor's \& master's degrees in Ulyanovsk Technical State
+University. \\
+I work in Moscow since 2009.
+\end{multicols}
+\spacedhrule{0em}{-0.4em}
+
+\roottitle{Experience}
+
+\headedsection  % sets the header for the section and includes any subsections
+  {\href{http://www.smartlabs.tv}{SmartLabs \acr{LLC}}}
+  {\textsc{Moscow}} {%
+
+  \headedsubsection  % sets the header for a subsection and contains usually body text
+    {Developer in System Department}
+    {September 2009 -- present}
+    {\bodytext{
+        \begin{itemize}
+            \item{Development of user requests for video content viewing redirector (\CPP/Qt)}
+            \item{Development of tool destined for video content distribution to client servers automation (\CPP/Qt)}
+            \item{Integration of automation tool with existing platform}
+            \item{Participation in Smart Media platform video server development
+                  (\CPP/Qt, STL)}
+              \item{Implementation of adaptive streaming (client side) (Apple HTTP Streaming)}
+            \item{Development of tool for platform components assembly automation (python)}
+            \item{Accompanying protocols: \acr{HTTP}, \acr{XML RPC},
+                  \acr{SOAP}, \acr{RTSP}}
+        \end{itemize}
+    }}
+}
+
+\headedsection
+{ \guillemotleft Autoscan\guillemotright {LLC}} 
+  {\textsc{Ulyanovsk}} {
+  \headedsubsection
+    {Developer}
+    {September 2007 -- May 2009}
+    {\bodytext{
+        \begin{itemize}
+            \item{Development of network applications for real-time video transmission (\CPP/Qt)}
+            \item{Automation of application's testing (AutoIt, erlang)}
+            \item{Accompanying protocols: \acr{XMPP}, \acr{SIP}, \acr{RTP}, \acr{STUN}}
+        \end{itemize}
+    }}
+}
+
+\headedsection
+  {\href{http://www.ulstu.ru}{Ulyanovsk Technical State University}}
+  {\textsc{Ulyanovsk}} {
+  \headedsubsection
+    {Technician}
+    {September 2006 -- September 2007}
+    {\bodytext{
+        \begin{itemize}
+            \item{Administration of class (11 computers with servers based on \acr{ASP} Linux 9.0 и Microsoft Windows 2003})
+            \item{Technical Support \& user consultation}
+        \end{itemize}
+    }}
+}
+
+\spacedhrule{0.5em}{-0.4em}
+\roottitle{Education}
+
+\headedsection
+  {Ulyanovsk Technical State University}
+  {\textsc{Ulyanovsk}} {
+  \headedsubsection
+    {Master degree}
+    {2007 -- 2009} {
+        \bodytext{Faculty of Information Systems \& Technologies, diploma \acr{VMA} 0105774}
+    }
+  }
+
+\headedsection
+  {Ulyanovsk Technical State University}
+  {\textsc{Ulyanovsk}} {
+  \headedsubsection
+    {Bachelor degree}
+    {2003 -- 2007} {
+        \bodytext{Faculty of Information Systems \& Technologies, diploma \acr{AVB} 0512119}
+    }
+  }
+
+\spacedhrule{0.5em}{-0.4em}
+\roottitle{Additional Education}
+
+\headedsection
+  {\href{http://udacity.com}{udacity.com}}
+  {} {
+  \headedsubsection
+    {\href{https://docs.google.com/document/d/1LpUyUwh_gGyPyKf-oxTDOy8ncQejwog1jhgMmtf59mY/edit}
+          {Programming a Robotic Car}}
+    {April, 2012} {}
+  \headedsubsection
+    {\href{https://docs.google.com/document/d/1wD_QEJ7mdzxbR_PMVEbZ_tZ0SyakJ_8Y1gBAj_S5Ufg/edit}
+          {Algorithms: Design and Analysis, Part I}}
+    {April, 2012} {}
+  }
+\headedsection
+  {\href{http://www.coursera.org}{coursera.org}}
+  {} {
+  \headedsubsection
+    {\href{https://docs.google.com/document/d/11OT8thqIgBiwM80D_HjpiGtKTz5CnxiITPG_H6QbuUA/edit}
+          {Machine Learning}}
+    {December, 2011} {}
+  \headedsubsection
+    {\href{https://docs.google.com/document/d/1wD_QEJ7mdzxbR_PMVEbZ_tZ0SyakJ_8Y1gBAj_S5Ufg/edit}
+          {Articifial Intelligence}}
+    {December, 2011} {}
+  }
+
+\spacedhrule{0.5em}{-0.4em}
+
+\roottitle{Skills}
+
+\inlineheadsection  % special section that has an inline header with a 'hanging' paragraph
+  {Technical}
+  {OS: Windows (95/98/ME/2000/XP/2003, 2001 -- 2009), Linux (ArchLinux, since 2009).
+   Programming Languages: x86 assembler, C, C++, Python, Pascal, Object Pascal.
+   Moderately experienced as well in: Haskell, Erlang, Clojure, Scala, Lua, AutoIt, \CS, Java,
+   JavaScript. 
+   Technologies: Test-Driven Development, Unit Testing, Design Patterns, UML.
+  }
+%  {Software design and implementation, with(in) a team. I love Ruby/\nsp
+  %  Python/\nsp Java/\nsp \CPP and flirt regularly with Haskell. Solid
+  %  knowledge of web technologies:\ \acr{HTML+CSS}, \acr{XML}, \acr{RDF},
+  %  \acr{REST}, \acr{SOAP} and JavaScript (mainly jQuery). Linux administration
+  %  skills:\ bash, Apache, My\acr{SQL}, Postgres\acr{SQL}, virtualization/cloud
+  %  (Open\acr{VZ}, \acr{VM}ware, \acr{KVM}, Xen and \acr{EC}2), datacenter
+  %  automation (Puppet and Chef), continuous integration (Hudson/Jenkins).}
+
+\inlineheadsection
+  {Language}
+  {Russian \emph{(mother tongue)}, English \emph{(intermediate; fluent reading of technical documentation, technical writing).}}
+
+\spacedhrule{1.6em}{-0.4em}
+
+\roottitle{Interests}
+
+\inlineheadsection
+  {Bach fugues, bodybuilding, Haskell.}
+
+
+\end{document}

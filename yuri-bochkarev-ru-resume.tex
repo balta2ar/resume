@@ -1,0 +1,244 @@
+% LaTeX source of my resume
+% =========================
+% originally from: https://github.com/cies/resume
+
+% Commented for easy reuse... ;)
+
+% See the `README.md` file for more info.
+
+% This file is licensed under the CC-NC-ND Creative Commons license.
+
+
+% start a document with the here given default font size and paper size
+%\documentclass[10pt,a4paper]{article}
+%\usepackage[T2A]{fontenc}
+%\usepackage[russian,english]{babel}
+%\usepackage[utf8x]{inputenc}
+
+%\usepackage[cm-default]{fontspec}
+%\usepackage{xltxtra}
+
+%\usepackage[xetex]{graphicx}
+%\usepackage{fontspec,xunicode}
+
+%\defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+
+\documentclass[unicode, 10pt, a4paper, oneside, fleqn]{article}
+
+%\usepackage[T1]{fontenc}
+
+\usepackage{polyglossia}  %% подключает пакет многоязыкой вёрстки
+\setmainfont[Ligatures=TeX]{Liberation Serif}  %% задаёт основной шрифт документа
+%\setmainfont[Ligatures=TeX]{Linux Libertine O}  %% задаёт основной шрифт документа
+%\setmainfont{PT Serif}  %% задаёт основной шрифт документа
+%\setsansfont{Liberation Sans}  %% задаёт шрифт без засечек
+%\setmonofont{Liberation Sans Mono}  %% задаёт моноширинный шрифт
+
+%\setmainfont[Mapping=tex-text, Numbers=OldStyle, Ligatures={Common,Contextual}]{Linux Libertine O}
+
+\defaultfontfeatures{Scale=MatchLowercase, Mapping=tex-text}  %% устанавливает поведение шрифтов по умолчанию
+\setdefaultlanguage[spelling=modern]{russian}  %% устанавливает язык по умолчанию
+\setotherlanguage{english}
+
+%\fontsize{4mm}{5mm}\selectfont
+
+%\renewcommand{\normalsize}{\fontsize{12.5}{10}\selectfont}
+
+%\defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+%\setmainfont[Scale=.95]{Arial}
+%\setmonofont{DejaVu Sans}
+
+\usepackage{comment}
+
+% include the `tex` instructions that takes care of loading packages and defining commands
+\include{resume-commands}
+
+\begin{document}  % begin the content of the document
+\sloppy  % this to relax whitespacing in favour of straight margins
+
+\maintitle{Юрий Бочкарев}{24 мая, 1988}  % title on top of the document
+
+\nobreakvspace{0.3em}  % add some page break averse vertical spacing
+
+% \noindent prevents paragraph's first lines from indenting
+% \mbox is used to obfuscate the email address
+% \sbull is a spaced bullet
+% \href well..
+% \\ breaks the line into a new paragraph
+\noindent\href{mailto:baltazar.dot.bz.at.gmail.dot.com}{baltazar.bz\mbox{}@\mbox{}gmail.com}\sbull
+\textsmaller{+}79853037426\sbull
+%cies010 \emph{(Skype)}\sbull
+\href{http://ru.linkedin.com/pub/yuri-bochkarev/21/3a9/555}{linkedin}
+\sbull
+\href{https://bitbucket.org/balta2ar}{bitbucket}
+\sbull
+\href{https://github.org/balta2ar}{github}
+\sbull
+\href{http://baltazar-bz.blogspot.com/}{blog}
+\\
+%Mathenesserplein 84\sbull
+%3022\thinspace {\sc ld}\sbull
+Москва\sbull
+Россия
+\spacedhrule{0.9em}{-0.4em}  % a horizontal line with some vertical spacing before and after
+
+\roottitle{О себе}  % a root section title
+
+\vspace{-1.3em}  % some vertical spacing
+
+\begin{multicols}{2}  % open a multicolumn environment
+\noindent 
+1994 -- 2003: экстерном закончил школу. 2003 -- 2009: закончил бакалавриат и
+магистратуру в Ульяновском Государственном Техническом Университете. Работаю в
+Москве с 2009 года.
+\end{multicols}
+\spacedhrule{0em}{-0.4em}
+
+\roottitle{Опыт работы}
+
+\headedsection  % sets the header for the section and includes any subsections
+  {\href{http://www.smartlabs.tv}{SmartLabs \acr{LLC}} -- цифровое
+   интерактивное телевидение (IPTV, DVB, OTT TV)}
+  {Москва} {
+  \headedsubsection  % sets the header for a subsection and contains usually body text
+    {Разработчик системного отдела}
+    {сентябрь 2009 -- настоящее время}
+    {\bodytext {
+        \begin{itemize}
+            \item{Разработка редиректора пользовательских запросов на
+                  просмотр видеоконтента (\CPP/Qt)}
+            \item{Разработка средства автоматизации распространения
+                  видеоконтента на серверы клиента (\CPP/Qt)}
+            \item{Интеграция средства автоматизации с существующей платформой}
+            \item{Участие в разработке видеосервера платформы SmartMedia
+                  (\CPP/Qt, STL)}
+            \item{Реализация клиента адаптивного стриминга (Apple HTTP Streaming)}
+            \item{Разработка средства автоматизации сборки компонентов платформы
+                  (python)}
+            \item{Участие в разработке сервера адаптивного стриминга (python)}
+            \item{Сопутствующие протоколы: \acr{HTTP}, \acr{XML RPC},
+                  \acr{SOAP}, \acr{RTSP}}
+        \end{itemize}
+    }}
+}
+
+\headedsection
+  {\acr{ООО} "Автоскан"}
+  {Ульяновск} {
+  \headedsubsection
+    {Разработчик}
+    {сентябрь 2007 -- май 2009}
+    {\bodytext {
+        \begin{itemize}
+            \item{Разработка сетевого приложения передачи видео в реальном
+                  времени (\CPP/Qt, OPAL, libjingle)}
+            \item{Автоматизация тестирования приложения (AutoIt, erlang)}
+            \item{Сопутствующие протоколы: \acr{XMPP}, \acr{SIP}, \acr{RTP},
+                  \acr{STUN}}
+        \end{itemize}
+    }}
+}
+
+\headedsection
+  {\href{http://www.ulstu.ru}{Ульяновский Государственный Технический Университет}}
+  {Ульяновск} {
+  \headedsubsection
+    {Техник}
+    {сентябрь 2006 -- сентябрь 2007}
+    {\bodytext {
+        \begin{itemize}
+            \item{Администрирование класса из 11 компьютеров с серверами на
+                  базе \acr{ASP} Linux 9.0 и Microsoft Windows 2003}
+            \item{Техническая поддержка и консультация пользователей}
+        \end{itemize}
+    }}
+}
+
+\spacedhrule{0.5em}{-0.4em}
+\roottitle{Образование}
+
+\headedsection
+  {Ульяновский Государственный Технический Университет}
+  {Ульяновск} {
+  \headedsubsection
+    {степень магистра}
+    {2007 -- 2009} {
+        \bodytext{Факультет Информационных Систем и Технологий, диплом \acr{ВМА} 0105774}
+    }
+  }
+
+\headedsection
+  {Ульяновский Государственный Технический Университет}
+  {Ульяновск} {
+  \headedsubsection
+    {степень бакалавра}
+    {2003 -- 2007} {
+        \bodytext{Факультет Информационных Систем и Технологий, диплом \acr{АВБ} 0512119}
+    }
+  }
+
+\spacedhrule{0.5em}{-0.4em}
+\roottitle{Дополнительное образование}
+
+\headedsection
+  {\href{http://www.coursera.org}{coursera.org}}
+  {test} {
+  \headedsubsection
+    {\href{https://docs.google.com/document/d/1wD_QEJ7mdzxbR_PMVEbZ_tZ0SyakJ_8Y1gBAj_S5Ufg/edit}
+          {Algorithms: Design and Analysis, Part I}}
+    {апрель, 2012} {}
+  \headedsubsection
+    {\href{https://docs.google.com/document/d/11OT8thqIgBiwM80D_HjpiGtKTz5CnxiITPG_H6QbuUA/edit}
+          {Machine Learning}}
+    {декабрь, 2011} {}
+  }
+
+\headedsection
+  {\href{http://udacity.com}{udacity.com}}
+  {} {
+  \headedsubsection
+    {\href{https://docs.google.com/document/d/1LpUyUwh_gGyPyKf-oxTDOy8ncQejwog1jhgMmtf59mY/edit}
+          {Programming a Robotic Car}}
+    {апрель, 2012} {}
+
+  \headedsubsection
+    {\href{https://docs.google.com/document/d/1wD_QEJ7mdzxbR_PMVEbZ_tZ0SyakJ_8Y1gBAj_S5Ufg/edit}
+          {Articifial Intelligence}}
+    {декабрь, 2011} {}
+  }
+
+\spacedhrule{0.5em}{-0.4em}
+
+\roottitle{Навыки}
+
+\inlineheadsection  % special section that has an inline header with a 'hanging' paragraph
+  {технические}
+  {ОС: Linux (ArchLinux, c 2009), Windows (2001 -- 2009).
+   Основные языки программирования: C++, Python.
+   Также небольшой опыт: Haskell, Erlang, Clojure, Scala, Lua, AutoIt, \CS,
+   Java, Octave, R, x86 assembler.
+   Технологии: Unit Testing, паттерны проектирования, UML.
+   Фреймворки: небольшой опыт работы с Pyramid, Twisted.
+  }
+%  {Software design and implementation, with(in) a team. I love Ruby/\nsp
+  %  Python/\nsp Java/\nsp \CPP and flirt regularly with Haskell. Solid
+  %  knowledge of web technologies:\ \acr{HTML+CSS}, \acr{XML}, \acr{RDF},
+  %  \acr{REST}, \acr{SOAP} and JavaScript (mainly jQuery). Linux administration
+  %  skills:\ bash, Apache, My\acr{SQL}, Postgres\acr{SQL}, virtualization/cloud
+  %  (Open\acr{VZ}, \acr{VM}ware, \acr{KVM}, Xen and \acr{EC}2), datacenter
+  %  automation (Puppet and Chef), continuous integration (Hudson/Jenkins).}
+
+\inlineheadsection
+  {языковые}
+  {Русский \emph{(носитель языка)}, English \emph{(средний: свободное чтение
+   технической документации, письменная техническая речь)}}
+
+\spacedhrule{1.6em}{-0.4em}
+
+\roottitle{Интересы}
+
+\inlineheadsection
+  {}
+  {Свободное время уделяю онлайн-курсам, фугам Баха, Хаскелю и штанге.}
+
+\end{document}
