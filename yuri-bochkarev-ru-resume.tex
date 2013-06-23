@@ -82,173 +82,215 @@
 %3022\thinspace {\sc ld}\sbull
 Москва\sbull
 Россия
-\spacedhrule{0.8em}{-0.4em}  % a horizontal line with some vertical spacing before and after
+%\spacedhrule{0.8em}{-0.4em}  % a horizontal line with some vertical spacing before and after
 
-\roottitle{О себе}  % a root section title
+\roottitlelined{О себе}  % a root section title
 
-\vspace{0em}  % some vertical spacing
-
+%\vspace{0em}  % some vertical spacing
 %\begin{multicols}{1}  % open a multicolumn environment
 \noindent 
 1994 -- 2003: экстерном закончил школу. 2003 -- 2009: закончил бакалавриат и
 магистратуру в Ульяновском Государственном Техническом Университете. Работаю в
 Москве с 2009 года.
+
 %\end{multicols}
-\spacedhrule{0.6em}{-0.4em}
+%\spacedhrule{0.6em}{-0.4em}
 
-\roottitle{Опыт работы}
+\roottitlelined{Опыт работы}
 
-\headedsection  % sets the header for the section and includes any subsections
-  {\href{http://www.smartlabs.tv}{SmartLabs \acr{LLC}} -- цифровое
-   интерактивное телевидение (IPTV, DVB, OTT TV)}
-  {Москва} {
-  \headedsubsection  % sets the header for a subsection and contains usually body text
-    {Разработчик системного отдела}
-    {сентябрь 2009 -- настоящее время}
-    {\bodytext {
-        \begin{itemize}
-            \item{Разработка редиректора пользовательских запросов на
-                  просмотр видеоконтента (\CPP, Qt)}
-            \item{Разработка средства автоматизации распространения
-                  видеоконтента на серверы клиента (\CPP, Qt)}
-            \item{Интеграция средства автоматизации с существующей платформой}
-            \item{Участие в разработке видеосервера платформы SmartMedia
-                  (\CPP, Qt, STL, live555)}
-            \item{Реализация клиента адаптивного стриминга (\CPP, Qt, Apple HTTP Streaming)}
-            \item{Разработка средства автоматизации сборки компонентов платформы
-                  (python)}
-            \item{Участие в разработке сервера адаптивного стриминга (python)}
-            \item{Сопутствующие протоколы: \acr{HLS}, \acr{HTTP}, \acr{XML RPC},
-                  \acr{SOAP}, \acr{RTSP}}
-        \end{itemize}
-    }}
-}
+\job  % sets the header for the section and includes any subsections
+    {\href{http://www.iponweb.com}{IPONWEB} -- платформа предоставления Интернет-рекламы}
+    {Москва}
+    {
+        \position  % sets the header for a subsection and contains usually body text
+            {Разработчик отдела R\&D}
+            {январь 2013 -- настоящее время}
+            {
+                \begin{itemize}
+                \item{Поддержка и рефакторинг архитектуры платформы доставки
+                    данных NullT (python, bash, django)}
+                \end{itemize}
+            }
+    }
 
 %\spaceddotrule{-0.5em}{0em}
-\vspace{0.7em}
+%\vspace{0.7em}
 
-\headedsection
-  {\acr{ООО} "Автоскан"}
-  {Ульяновск} {
-  \headedsubsection
-    {Разработчик}
-    {сентябрь 2007 -- май 2009}
-    {\bodytext {
-        \begin{itemize}
-            \item{Разработка сетевого приложения передачи видео в реальном
-                  времени (\CPP, Qt, OPAL, libjingle)}
-            \item{Автоматизация тестирования приложения (AutoIt, erlang)}
-            \item{Сопутствующие протоколы: \acr{XMPP}, \acr{SIP}, \acr{RTP},
-                  \acr{STUN}}
-        \end{itemize}
-    }}
-}
+\job  % sets the header for the section and includes any subsections
+    {\href{http://www.smartlabs.tv}{SmartLabs \acr{LLC}} -- цифровое
+     интерактивное телевидение (\acr{IPTV}, \acr{DVB}, \acr{OTT TV})}
+    {Москва}
+    {
+        \position  % sets the header for a subsection and contains usually body text
+            {Разработчик системного отдела}
+            {сентябрь 2009 -- январь 2013}
+            {
+                \begin{itemize}
+                    \item{Разработка редиректора пользовательских запросов на
+                          просмотр видеоконтента (\CPP, Qt)}
+                    \item{Разработка средства автоматизации распространения
+                          видеоконтента на серверы клиента (\CPP, Qt)}
+                    \item{Интеграция средства автоматизации с существующей платформой}
+                    \item{Участие в разработке видеосервера платформы SmartMedia
+                          (\CPP/Qt, \acr{STL})}
+                    \item{Реализация клиента адаптивного стриминга (\CPP, Qt, Apple HTTP Streaming)}
+                    \item{Разработка средства автоматизации сборки компонентов платформы
+                          (python)}
+                    \item{Участие в разработке сервера адаптивного стриминга (python)}
+                    \item{Сопутствующие протоколы: \acr{HLS}, \acr{HTTP}, \acr{XML RPC},
+                          \acr{SOAP}, \acr{RTSP}}
+                \end{itemize}
+            }
+    }
 
 %\spaceddotrule{-0.5em}{0em}
-\vspace{0.7em}
+%\vspace{0.7em}
 
-\headedsection
-  {\href{http://www.ulstu.ru}{Ульяновский Государственный Технический Университет}}
-  {Ульяновск} {
-  \headedsubsection
-    {Техник}
-    {сентябрь 2006 -- сентябрь 2007}
-    {\bodytext {
-        \begin{itemize}
-            \item{Администрирование класса из 11 компьютеров с серверами на
-                  базе \acr{ASP} Linux 9.0 и Microsoft Windows 2003}
-            \item{Техническая поддержка и консультация пользователей}
-        \end{itemize}
-    }}
-}
-
-\spacedhrule{0.5em}{-0.4em}
-\roottitle{Образование}
-
-\headedsection
-  {Ульяновский Государственный Технический Университет}
-  {Ульяновск} {
-  \headedsubsection
-    {степень магистра}
-    {2007 -- 2009} {
-        \bodytext{Факультет Информационных Систем и Технологий, диплом \acr{ВМА} 0105774}
+\job
+    {\acr{ООО} "Автоскан"}
+    {Ульяновск}
+    {
+        \position
+            {Разработчик}
+            {сентябрь 2007 -- май 2009}
+            {
+                \begin{itemize}
+                    \item{Разработка сетевого приложения передачи видео в реальном
+                          времени (\CPP, Qt, OPAL, libjingle)}
+                    \item{Автоматизация тестирования приложения (AutoIt, erlang)}
+                    \item{Сопутствующие протоколы: \acr{XMPP}, \acr{SIP}, \acr{RTP},
+                          \acr{STUN}}
+                \end{itemize}
+            }
     }
-  }
 
-\headedsection
-  {Ульяновский Государственный Технический Университет}
-  {Ульяновск} {
-  \headedsubsection
-    {степень бакалавра}
-    {2003 -- 2007} {
-        \bodytext{Факультет Информационных Систем и Технологий, диплом \acr{АВБ} 0512119}
+
+%\spaceddotrule{-0.5em}{0em}
+%\vspace{0.7em}
+
+\job
+    {\href{http://www.ulstu.ru}{Ульяновский Государственный Технический Университет}}
+    {Ульяновск}
+    {
+        \position
+            {Техник}
+            {сентябрь 2006 -- сентябрь 2007}
+            {
+                \begin{itemize}
+                    \item{Администрирование класса (11 компьютеров,
+                          \acr{ASP} Linux 9.0 и Microsoft Windows 2003)}
+                    \item{Организация системы видеонаблюдения в классе}
+                    \item{Техническая поддержка и консультация пользователей}
+                \end{itemize}
+            }
     }
-  }
 
-\spacedhrule{0.5em}{-0.4em}
-\roottitle{Дополнительное образование}
+%\spacedhrule{0.5em}{-0.4em}
+\roottitlelined{Образование}
 
-\headedsection
-  {\href{http://www.coursera.org}{coursera.org}}
-  {} {
-  \headedsubsection
-    {\href{https://docs.google.com/document/d/1AWaukQ0K4C-ZcuRRqYANJuYDOPxYH7MoVdXYKHPYJ8I/edit}
-          {Functional Programming Principles in Scala}}
-    {декабрь, 2012} {}
-  \headedsubsection
-    {\href{https://docs.google.com/document/d/1Rh_5PSFQBBtEwMZIa5r69H5ONOjpX5jfiPorFIvQg5Y/edit}
-          {Computing for Data Analysis}}
-    {октябрь, 2012} {}
-  \headedsubsection
-    {\href{https://docs.google.com/document/d/1j6LlyJUGM03TxqSImyHeHoa16dSCLZQop6zmrPe8YOw/edit}
-          {Algorithms: Design and Analysis, Part I}}
-    {апрель, 2012} {}
-  \headedsubsection
-    {\href{https://docs.google.com/document/d/11OT8thqIgBiwM80D_HjpiGtKTz5CnxiITPG_H6QbuUA/edit}
-          {Machine Learning}}
-    {декабрь, 2011} {}
-  }
+\job
+    {\href{http://www.ulstu.ru}{Ульяновский Государственный Технический Университет}}
+    {Ульяновск}
+    {
+        \positionnobreak
+            {степень магистра}
+            {2007 -- 2009}
+            {Факультет Информационных Систем и Технологий, диплом \acr{ВМА} 0105774}
+        \positionnobreak
+            {степень бакалавра}
+            {2003 -- 2007}
+            {Факультет Информационных Систем и Технологий, диплом \acr{АВБ} 0512119}
+    }
 
-\headedsection
-  {\href{http://udacity.com}{udacity.com}}
-  {} {
-  \headedsubsection
-    {\href{https://docs.google.com/document/d/1LpUyUwh_gGyPyKf-oxTDOy8ncQejwog1jhgMmtf59mY/edit}
-          {Programming a Robotic Car}}
-    {апрель, 2012} {}
+%\spacedhrule{0.5em}{-0.4em}
+\roottitlelined{Дополнительное образование}
 
-  \headedsubsection
-    {\href{https://docs.google.com/document/d/1wD_QEJ7mdzxbR_PMVEbZ_tZ0SyakJ_8Y1gBAj_S5Ufg/edit}
-          {Artificial Intelligence}}
-    {декабрь, 2011} {}
-  }
+\vspace{-0.7em}
+\begin{minipage}[t]{0.43\textwidth}
+\setlength\abovedisplayskip{0pt}
+\job
+    {\href{http://ita.by}{Information Technology Alliance}}
+    {}
+    {
+        \position
+            {\href{https://docs.google.com/file/d/0B2cptPgckn74RlpNa0xVNG9VSnM/edit}
+                  {Clojure Course}}
+            {апрель, 2013}
+            {}
+    }
+\job
+    {\href{http://udacity.com}{udacity.com}}
+    {}
+    {
+        \position
+            {\href{https://docs.google.com/document/d/1LpUyUwh_gGyPyKf-oxTDOy8ncQejwog1jhgMmtf59mY/edit}
+                  {Programming a Robotic Car}}
+            {апрель, 2012}
+            {}
+        \position
+            {\href{https://docs.google.com/document/d/1wD_QEJ7mdzxbR_PMVEbZ_tZ0SyakJ_8Y1gBAj_S5Ufg/edit}
+                  {Artificial Intelligence}}
+            {декабрь, 2011}
+            {}
+    }
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.55\textwidth}
+\setlength\abovedisplayskip{0pt}
+\job
+    {\href{http://www.coursera.org}{coursera.org}}
+    {}
+    {
+        \position
+            {\href{https://docs.google.com/document/d/1AWaukQ0K4C-ZcuRRqYANJuYDOPxYH7MoVdXYKHPYJ8I/edit}
+                  {Functional Programming Principles in Scala}}
+            {декабрь, 2012}
+            {}
+        \position
+            {\href{https://docs.google.com/document/d/1Rh_5PSFQBBtEwMZIa5r69H5ONOjpX5jfiPorFIvQg5Y/edit}
+                  {Computing for Data Analysis}}
+            {октябрь, 2012}
+            {}
+        \position
+            {\href{https://docs.google.com/document/d/1j6LlyJUGM03TxqSImyHeHoa16dSCLZQop6zmrPe8YOw/edit}
+                  {Algorithms: Design and Analysis, Part I}}
+            {апрель, 2012}
+            {}
+        \position
+            {\href{https://docs.google.com/document/d/11OT8thqIgBiwM80D_HjpiGtKTz5CnxiITPG_H6QbuUA/edit}
+                  {Machine Learning}}
+            {декабрь, 2011}
+            {}
+    }
+\end{minipage}
+%\end{multicols}
 
-\spacedhrule{0.5em}{-0.4em}
+%scala https://docs.google.com/document/d/18Z2Y-FqLYMQsPQPVDYRJ64X_qyuaYLOP3Te7ScyfA6M
+%comp for data analysis https://docs.google.com/document/d/1boL0vFYLzqr3UuSusrcKH1w6QVtqybHBYj03neW4qO8
 
-\roottitle{Навыки}
+%\spacedhrule{0.5em}{-0.4em}
+
+\roottitlelined{Навыки}
 
 \inlineheadsection  % special section that has an inline header with a 'hanging' paragraph
-  {Технические}
-  {\acr{ОС}: \acr{GNU}/Linux (c 2009), Windows (2001 -- 2009).
-   Основные языки программирования: C++, Python.
-   Также небольшой опыт: Haskell, Erlang, Clojure, Scala, Lua, AutoIt,
-   Java, Octave, R, x86 assembler.
-   VCS: hg, git, svn.
-   Технологии: Unit Testing, паттерны проектирования, \acr{UML}.
-   Фреймворки: небольшой опыт работы с Twisted, Pyramid.
-  }
+    {Технические}
+    {
+        \acr{ОС}: \acr{GNU}/Linux (c 2009), Windows (2001 -- 2009).
+        Основные языки программирования: Python, \acr{C++}.
+        Также небольшой опыт: Haskell, Clojure, R, Scala, Erlang, Lua, AutoIt,
+        Java, Octave, x86 assembler.
+        VCS: hg, git, svn.
+        Технологии: Unit Testing, паттерны проектирования, \acr{UML}.
+        Фреймворки: небольшой опыт работы с Twisted, Pyramid, Django.
+    }
 
 \inlineheadsection
-  {Языковые}
-  {Русский \emph{(носитель языка)}, English \emph{(средний: свободное чтение
-   технической документации, письменная техническая речь)}}
+    {Языковые}
+    {
+        Русский \emph{(носитель языка)}, English \emph{(свободное чтение
+        технической документации, письменная техническая речь)}
+    }
 
-%\spacedhrule{1.6em}{-0.4em}
-%
-%\roottitle{Интересы}
-%
-%\inlineheadsection
-%  {}
-%  {Свободное время уделяю онлайн-курсам, фугам Баха и штанге.}
+% --- OLD ----------------------------------------------------------------------
 
 \end{document}
