@@ -116,6 +116,22 @@
     \end{list}
 }
 
+% Same as indented, but with less left margin
+\newenvironment{course_indented} {
+    \begin{list} {} {
+        %\parsep=0pt\topsep=0pt\partopsep=0pt
+        %\setlength{\leftmargin}{\newparindent}
+        \setlength{\parsep}{0pt}
+        \setlength{\parskip}{0pt}
+        \setlength{\itemsep}{0pt}
+        \setlength{\topsep}{0pt}
+        \setlength{\leftmargin}{5pt}
+        \setlength{\rightmargin}{0pt}
+    }
+} {
+    \end{list}
+}
+
 \newcommand{\job}[3]{
     \vspace{0.3em}
     \nopagebreak[4]
@@ -127,6 +143,21 @@
         \item[]
         #3
     \end{indented}
+    \nopagebreak[4]
+    \vspace{-0.2em}
+}
+
+\newcommand{\courseplatform}[3]{
+    \vspace{0.3em}
+    \nopagebreak[4]
+    \textscale{1.1}{#1}
+    \hfill #2
+
+    \vspace{-0.2em}
+    \begin{course_indented}
+        \item[]
+        #3
+    \end{course_indented}
     \nopagebreak[4]
     \vspace{-0.2em}
 }
@@ -155,16 +186,16 @@
     #1                      % course
     \hfill \emph{#2}        % time period
 
-    % do not waste space for content is it wasn't given
-    \ifthenelse{\isempty{#3}}
-        {}
-        {
-            \vspace{-0.2em}
-            \begin{indented}
-                \item[]
-                #3
-            \end{indented}
-        }
+    % % do not waste space for content is it wasn't given
+    % \ifthenelse{\isempty{#3}}
+    %     {}
+    %     {
+    %         \vspace{-0.2em}
+    %         \begin{course_indented}
+    %             \item[]
+    %             #3
+    %         \end{course_indented}
+    %     }
     \pagebreak[2]
 }
 
