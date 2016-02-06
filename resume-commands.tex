@@ -149,6 +149,25 @@
     \pagebreak[2]
 }
 
+% course is very similar to position, except it's not bold
+\newcommand{\course}[3] {
+    \nopagebreak[4]
+    #1                      % course
+    \hfill \emph{#2}        % time period
+
+    % do not waste space for content is it wasn't given
+    \ifthenelse{\isempty{#3}}
+        {}
+        {
+            \vspace{-0.2em}
+            \begin{indented}
+                \item[]
+                #3
+            \end{indented}
+        }
+    \pagebreak[2]
+}
+
 % put position and contents into the same line
 \newcommand{\positionnobreak}[3] {
     \nopagebreak[4]
@@ -158,9 +177,9 @@
     \pagebreak[2]
 }
 
-\newcommand{\course}[3] {
-    \textbf{#1} & #2 & \emph{#3} \\
-}
+%\newcommand{\course}[3] {
+%    \textbf{#1} & #2 & \emph{#3} \\
+%}
 
 
 %%% COMMANDS OF THE ORIGINAL AUTHOR
