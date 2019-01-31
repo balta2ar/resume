@@ -55,7 +55,8 @@
 \begin{document}  % begin the content of the document
 \sloppy  % this to relax whitespacing in favour of straight margins
 
-\maintitle{Yuri Bochkarev}{May 24, 1988}  % title on top of the document
+% \maintitle{Yuri Bochkarev}{May 24, 1988}  % title on top of the document
+\maintitle{Yuri Bochkarev}{}  % title on top of the document
 
 \nobreakvspace{0.3em}  % add some page break averse vertical spacing
 
@@ -72,8 +73,6 @@ Moscow (Russia)
 %cies010 \emph{(Skype)}\sbull
 \href{http://ru.linkedin.com/pub/yuri-bochkarev/21/3a9/555}{linkedin}
 \sbull
-\href{https://bitbucket.org/balta2ar}{bitbucket}
-\sbull
 \href{https://github.com/balta2ar}{github}
 % \\
 %Mathenesserplein 84\sbull
@@ -87,12 +86,15 @@ Moscow (Russia)
 %\begin{multicols}{2}  % open a multicolumn environment
 \noindent
 Linux Python backend developer with 10+ years of experience in
-    building, testing and maintaining complex software systems. 5+ years of
-    Python experience, 6+ years of C++ experience, solid low-level background.
-    Driven to get things done along with learning new skills, tools and
-    technologies. Skilled to write efficient, maintainable and testable code. Able
-    to communicate effectively and clearly in Russian and English both spoken
-    and written.
+    building, testing and maintaining complex software systems. 6+ years of
+    Python experience, 6+ years of C++ experience, low-level background.
+    Driven to get things done as well as to learn new skills, tools and
+    technologies. Skilled to write efficient, maintainable and testable code.
+
+    % Able
+    % to communicate effectively and clearly in Russian and English both spoken
+    % and written.
+
 %\end{multicols}
 %\spacedhrule{0.6em}{-0.4em}
 
@@ -104,27 +106,42 @@ Linux Python backend developer with 10+ years of experience in
     {Moscow}
     {
         \position  % sets the header for a subsection and contains usually body text
-        {Senior Software Developer (Internal Tools, \href{http://www.bidswitch.com/}{BidSwitch})}
+        {Senior Software Developer (Internal Tools, \href{http://www.bidswitch.com/}{Bidswitch})}
         {June 2017 -- present}
         {
             \begin{itemize}
-                \item{Development of a user group update microservice
-                      (Python 3.4, pytest, pymongo, TokuMX)}
-                \item{Development of a facade API service to an internal DB
-                      (Golang 1.8, Cassandra 2.6)}
-                \item{Support of a log to DB loading tool (C++ 11, Cassandra 2.6)}
-                \item{Development process: Scrum}
-                \item{Technology stack: Docker, Jenkins, Artifactory,
-                      OBS, Graphite, Grafana, Kibana, Ubuntu 14.04}
+                \item{Transitioned the user management and access control subsystem
+                      across departments that allowed for faster and simpler
+                      workflow and operations (Python3.6, Django 1.11,
+                      Django Rest Framework 3.6, Gabbi HTTP testing suite)}
+                \item{Integrated Third-Party APIs with the internal
+                      discrepancy monitoring service (Python3.6, PostgreSQL 9.6)}
+                \item{Added support for bulk operations to internal creative
+                      blocking service, which saved about 1 hour a day for client
+                      support team (Python3.6, PostgreSQL 9.6)}
+                \item{Integrated Third-Party API with the internal creative
+                      approval service (Python3.5, asyncio, Cassandra 2.6)}
+                \item{Optimized user group update microservice to reduce
+                      processing time by 3x (Python 3.4, pytest, pymongo, TokuMX)}
+                \item{Developed a facade API service to the internal DB as a part of
+                      an integration with a client (Golang 1.8, Cassandra 2.6)}
+                \item{Added metrics to the ``logs to DB'' loading tool, which provided
+                      better understanding and visibility of the tool's internal state
+                      (C++ 11, Cassandra 2.6)}
+                \item{Software development process: Scrum, Kanban}
+                \item{Technology stack: Docker, Kubenetes, Sentry, Jenkins,
+                      Artifactory, OBS, Graphite, Grafana, Kibana, Ubuntu, Alpine}
             \end{itemize}
         }
         \position  % sets the header for a subsection and contains usually body text
             {Senior Software Developer (Technology)}
-            {May 2016 -- present}
+            {May 2016 -- June 2017}
             {
                 \begin{itemize}
-                    \item{Backend implementation of campaign visualization and
+                    \item{Extended the functionality of the campaign visualization and
                           forecasting service (Python, Django, Numpy, Scipy, Pandas)}
+                    \item{Integrated forecasting service functionality with the
+                          custom testing stands}
                     \item{Software development process: Scrum + Kanban}
                 \end{itemize}
             }
@@ -133,11 +150,10 @@ Linux Python backend developer with 10+ years of experience in
             {July 2014 -- May 2016}
             {
                 \begin{itemize}
-                    \item{Backend implementation of campaign visualization and
-                          forecasting service (Python, Django, Numpy, Scipy, Pandas)}
-                    \item{Participation in development of budget control server for
-                          advertising campaigns (Python, Twisted, Numpy, Pandas)}
-                    \item{Roll out and support of Continuous Integration infrastructure
+                    \item{Optimized network communication subsystem of the
+                          budget control server for advertising campaigns, which
+                          reduced total iteration time by 30\% (Python, Twisted, Numpy, Pandas)}
+                    \item{Rolled out Continuous Integration infrastructure
                           (Jenkins, Trial, pytest, custom testing stands)}
                 \end{itemize}
             }
@@ -146,8 +162,15 @@ Linux Python backend developer with 10+ years of experience in
             {January 2013 -- July 2014}
             {
                 \begin{itemize}
-                    \item{Support, development, and architechture refactoring
-                          of data delivery service (Python, \acr{BASH}, Django)}
+                    \item{Refactored and developed the data delivery service,
+                          made it more modular, testable and robust
+                          (Python, \acr{BASH}, Django)}
+                    \item{Added performance/time metrics to comply with the established
+                          SLA}
+                    \item{Standardized data transfer configuration DSL that
+                          is used across the company services}
+                    \item{Optimized file transfer time by integrating UDP-based
+                          file transfer solutions (UDT)}
                 \end{itemize}
             }
     }
@@ -163,17 +186,23 @@ Linux Python backend developer with 10+ years of experience in
             {September 2009 -- January 2013}
             {
                 \begin{itemize}
-                    \item{Development of video content viewing redirector (\CPP, Qt)}
-                    \item{Development of video content distribution automation tool (\CPP, Qt)}
-                    \item{Integration of automation tool with existing platform}
-                    \item{Participation in SmartMedia platform video server development
+                    \item{Developed an RTSP request redirector (\CPP, Qt)}
+                    \item{Developed a video content distribution and publishing
+                          automation tool (\CPP, Qt)}
+                    \item{Integrated a third-party encryption service with the
+                          video content distribution automation tool (VeriMatrix)}
+                    \item{Improved SmartMedia platform video server seek time by
+                          implementing a faster file segment lookup algorithm
                           (\CPP, Qt, \acr{STL}, live555)}
-                    \item{Implementation of adaptive streaming client (\CPP, Qt, Apple HTTP Streaming)}
-                    \item{Development of platform components build automation tool (Python)}
-                    \item{Participation in adaptive streaming server development
-                          (Python, Twisted)}
+                    \item{Implemented an adaptive streaming client that was used
+                          in Set-Top Boxes (\CPP, Qt, Apple HTTP Streaming)}
+                    \item{Developed an interactive build automation tool that
+                          helped developers save time and do less mistakes when
+                          building platform components (Python)}
+                    \item{Took part in the implementation of the adaptive
+                          streaming server (Python, Twisted)}
                     \item{Accompanying protocols: \acr{HTTP}, \acr{XML RPC},
-                          \acr{SOAP}, \acr{RTSP}}
+                          \acr{SOAP}, \acr{RTSP}, \acr{HLS}}
                 \end{itemize}
             }
     }
@@ -189,9 +218,10 @@ Linux Python backend developer with 10+ years of experience in
             {September 2007 -- May 2009}
             {
                 \begin{itemize}
-                    \item{Development of network applications for real-time video
-                          transmission (\CPP, Qt, \acr{OPAL}, libjingle)}
-                    \item{Automation of application's testing (AutoIt, Erlang)}
+                    \item{Prototyped and developed network applications for
+                          real-time video transmission
+                          (\CPP, Qt, \acr{OPAL}, libjingle)}
+                    \item{Application testing automation (AutoIt, Erlang)}
                     \item{Accompanying protocols: \acr{XMPP}, \acr{SIP}, \acr{RTP},
                           \acr{STUN}}
                 \end{itemize}
