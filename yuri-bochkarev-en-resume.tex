@@ -65,13 +65,13 @@
 % \sbull is a spaced bullet
 % \href well..
 % \\ breaks the line into a new paragraph
-Moscow (Russia)
+Oslo (Norway)
 \sbull
 %\noindent
 \href{mailto:baltazar.bz@gmail.com}{baltazar.bz\mbox{}@\mbox{}gmail.com}\sbull
-\textsmaller{+}79853037426\sbull
+% \textsmaller{+}XXXPHONENUMBERXXX\sbull
 %cies010 \emph{(Skype)}\sbull
-\href{http://ru.linkedin.com/pub/yuri-bochkarev/21/3a9/555}{linkedin}
+\href{http://linkedin.com/pub/yuri-bochkarev/21/3a9/555}{linkedin}
 \sbull
 \href{https://github.com/balta2ar}{github}
 % \\
@@ -85,11 +85,12 @@ Moscow (Russia)
 
 %\begin{multicols}{2}  % open a multicolumn environment
 \noindent
-Linux Python backend developer with 10+ years of experience in
+Linux Python backend developer with 15+ years of experience in
     building, testing and maintaining complex software systems. 6+ years of
-    Python experience, 6+ years of C++ experience, low-level background.
-    Driven to get things done as well as to learn new skills, tools and
-    technologies. Skilled to write efficient, maintainable and testable code.
+    Python experience, 3+ years of Go experience, 6+ years of C++ experience,
+    low-level background. Driven to get things done as well as to learn new
+    skills, tools and technologies. Skilled to write efficient, maintainable and
+    testable code.
 
     % Able
     % to communicate effectively and clearly in Russian and English both spoken
@@ -101,13 +102,39 @@ Linux Python backend developer with 10+ years of experience in
 \roottitlelined{Experience}
 
 \job  % sets the header for the section and includes any subsections
+    {\href{http://www.pexip.com}{Pexip} -- video conferencing solution}
+    {Oslo}
+    {
+        \position  % sets the header for a subsection and contains usually body text
+        {Senior Software Developer (Cloud Service)}
+        {June 2019 -- present}
+        {
+            \begin{itemize}
+                \item{Developed a video conferencing analytics platform that
+                    includes the following services:}
+                \item{a service to track instanteneous information about calls,
+                    conferences, devices, users, etc (Golang, HTTP, websockets, Google PubSub)}
+                \item{a service to track historical information about the number
+                    of calls, conferences, participants (Golang, sqlite, LMDB
+                    (embedded key-value store), HTTP)}
+                \item{a service to track and link detailed information about
+                    calls and events that constitute such calls (Golang, MySQL, Google PubSub)}
+                \item{a notification service (desktop/mobile) (Golang, FCM, APN)}
+                \item{Technology stack: Docker, GCP/Google Cloud, Kubenetes,
+                    Gitlab, Grafana, Kibana, Loki, Ubuntu}
+            \end{itemize}
+        }
+    }
+
+
+\job  % sets the header for the section and includes any subsections
     {\href{http://www.iponweb.com}{IPONWEB} -- media trading platform
      (\acr{RTB}, Ad exchange, \acr{DSP}, \acr{SSP})}
     {Moscow}
     {
         \position  % sets the header for a subsection and contains usually body text
         {Senior Software Developer (Internal Tools, \href{http://www.bidswitch.com/}{Bidswitch})}
-        {June 2017 -- present}
+        {June 2017 -- September 2019}
         {
             \begin{itemize}
                 \item{Transitioned the user management and access control subsystem
@@ -239,16 +266,16 @@ Linux Python backend developer with 10+ years of experience in
             {September 2006 -- September 2007}
             {
                 \begin{itemize}
-                    \item{Computer class administration (11 computers,
+                    \item{computer class admin (11 computers,
                           \acr{ASP} Linux 9.0, Microsoft Windows 2003})
-                    \item{Class video surveillance organization, technical support}
+                    \item{set up video surveillance in the class room, technical support}
                 \end{itemize}
             }
     }
 
 %\spacedhrule{0.5em}{-0.4em}
 
-\newpage
+%\newpage
 
 \roottitlelined{Education}
 
@@ -391,8 +418,8 @@ Linux Python backend developer with 10+ years of experience in
     {Technical}
     {
         \acr{OS}: \acr{GNU}/Linux (since 2009), Windows (2001 -- 2009).
-        Programming Languages: Python, C++.
-        Moderately experienced as well in: Go, Haskell, Clojure, R, Scala,
+        Programming Languages: Python, C++, Go.
+        Moderately experienced as well in: Haskell, Clojure, R, Scala,
         Erlang, Lua, AutoIt, Java, Octave, x86 assembler.
         VCS: hg, git, svn.
         Technologies: Unit Testing, Design Patterns, \acr{UML}.
@@ -402,7 +429,7 @@ Linux Python backend developer with 10+ years of experience in
 \inlineheadsection
     {Language}
     {
-        Russian \emph{(native)}, English \emph{(upper intermediate).}
+        Russian \emph{(native)},  English \emph{(advanced)}, Norwegian \emph{(intermediate)}.
     }
 
 %\spacedhrule{1.6em}{-0.4em}
