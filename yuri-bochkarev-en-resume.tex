@@ -85,12 +85,12 @@ Oslo (Norway)
 
 %\begin{multicols}{2}  % open a multicolumn environment
 \noindent
-Linux Python backend developer with 15+ years of experience in
-    building, testing and maintaining complex software systems. 6+ years of
-    Python experience, 3+ years of Go experience, 6+ years of C++ experience,
-    low-level background. Driven to get things done as well as to learn new
-    skills, tools and technologies. Skilled to write efficient, maintainable and
-    testable code.
+Linux backend developer with 15+ years of experience in building,
+testing, and maintaining complex software systems. Over 6 years of experience
+with Python, 5+ years with Go, and 6+ years with C++, along with a
+low-level programming background. Interested in the design and architecture of cloud
+services, distributed systems, algorithms, and data structures.
+
 
     % Able
     % to communicate effectively and clearly in Russian and English both spoken
@@ -112,23 +112,27 @@ Linux Python backend developer with 15+ years of experience in
             \begin{itemize}
                 \item{Developed a video conferencing analytics platform that
                     includes the following services:}
-                \item{a service to track instanteneous information about calls,
-                    conferences, devices, users, etc (Golang, HTTP, websockets, Google PubSub)}
-                \item{a service to track historical information about the number
-                    of calls, conferences, participants (Golang, sqlite, LMDB
-                    (embedded key-value store), HTTP)}
-                \item{a service to track and link detailed information about
-                    calls and events that constitute such calls (Golang, MySQL, Google PubSub)}
-                \item{a notification service (desktop/mobile) (Golang, FCM, APN)}
-                \item{Technology stack: Docker, GCP/Google Cloud, Kubenetes,
-                    Gitlab, Grafana, Kibana, Loki, Ubuntu}
+                \item{A service to track instantaneous information about calls,
+                    conferences, devices, users, etc. (Golang, HTTP, WebSockets,
+                Google PubSub)}
+                \item{A service to track historical information about the number
+                    of calls, conferences, and participants (Golang, SQLite,
+                LMDB (embedded key-value store), ClickHouse, BigQuery, HTTP)}
+                \item{A service to track and link detailed information about
+                    calls and events that constitute such calls (Golang, MySQL,
+                Google PubSub)}
+                \item{Each service has a lightweight frontend built with vanilla JavaScript}
+                \item{A notification service for desktop and mobile (Golang,
+                    FCM, APN)}
+                \item{Keywords: Event Sourcing, Docker, GCP/Google Cloud,
+                    Kubernetes, GitLab, Grafana, Kibana, Loki, Ubuntu}
             \end{itemize}
         }
     }
 
 
 \job  % sets the header for the section and includes any subsections
-    {\href{http://www.iponweb.com}{IPONWEB} -- media trading platform
+    {\href{https://www.criteo.com/news/press-releases/2021/12/criteo-enters-into-exclusive-negotiations-to-acquire-iponweb/}{IPONWEB} -- media trading platform
      (\acr{RTB}, Ad exchange, \acr{DSP}, \acr{SSP})}
     {Moscow}
     {
@@ -137,27 +141,27 @@ Linux Python backend developer with 15+ years of experience in
         {June 2017 -- September 2019}
         {
             \begin{itemize}
-                \item{Transitioned the user management and access control subsystem
-                      across departments that allowed for faster and simpler
-                      workflow and operations (Python3.6, Django 1.11,
-                      Django Rest Framework 3.6, Gabbi HTTP testing suite)}
-                \item{Integrated Third-Party APIs with the internal
-                      discrepancy monitoring service (Python3.6, PostgreSQL 9.6)}
-                \item{Added support for bulk operations to internal creative
-                      blocking service, which saved about 1 hour a day for client
-                      support team (Python3.6, PostgreSQL 9.6)}
-                \item{Integrated Third-Party API with the internal creative
-                      approval service (Python3.5, asyncio, Cassandra 2.6)}
-                \item{Optimized user group update microservice to reduce
-                      processing time by 3x (Python 3.4, pytest, pymongo, TokuMX)}
-                \item{Developed a facade API service to the internal DB as a part of
-                      an integration with a client (Golang 1.8, Cassandra 2.6)}
-                \item{Added metrics to the ``logs to DB'' loading tool, which provided
-                      better understanding and visibility of the tool's internal state
-                      (C++ 11, Cassandra 2.6)}
+                \item{Transitioned the user management and access control
+                    subsystem across departments, allowing for faster and
+                simpler workflow and operations (Python 3.6, Django 1.11, Django
+            Rest Framework 3.6, Gabbi HTTP testing suite)}
+                \item{Integrated third-party APIs with the internal discrepancy
+                    monitoring service (Python 3.6, PostgreSQL 9.6)}
+                \item{Added support for bulk operations to the internal creative
+                    blocking service, saving about 1 hour per day for the client
+                support team (Python 3.6, PostgreSQL 9.6)}
+                \item{Integrated third-party API with the internal creative
+                    approval service (Python 3.5, asyncio, Cassandra 2.6)}
+                \item{Optimized the user group update microservice, reducing
+                    processing time by 3x (Python 3.4, pytest, pymongo, TokuMX)}
+                \item{Developed a facade API service for the internal database
+                    as part of a client integration (Golang 1.8, Cassandra 2.6)}
+                \item{Added metrics to the "logs to DB" loading tool, providing
+                    better understanding and visibility of the tool's internal
+                state (C++ 11, Cassandra 2.6)}
                 \item{Software development process: Scrum, Kanban}
-                \item{Technology stack: Docker, Kubenetes, Sentry, Jenkins,
-                      Artifactory, OBS, Graphite, Grafana, Kibana, Ubuntu, Alpine}
+                \item{Keywords: Docker, Kubernetes, Sentry, Jenkins,
+                    Artifactory, OBS, Graphite, Grafana, Kibana, Ubuntu, Alpine}
             \end{itemize}
         }
         \position  % sets the header for a subsection and contains usually body text
@@ -165,10 +169,8 @@ Linux Python backend developer with 15+ years of experience in
             {May 2016 -- June 2017}
             {
                 \begin{itemize}
-                    \item{Extended the functionality of the campaign visualization and
-                          forecasting service (Python, Django, Numpy, Scipy, Pandas)}
-                    \item{Integrated forecasting service functionality with the
-                          custom testing stands}
+                    \item{Extended the functionality of the campaign visualization and forecasting service (Python, Django, Numpy, Scipy, Pandas)}
+                    \item{Integrated forecasting service functionality with custom testing stands}
                     \item{Software development process: Scrum + Kanban}
                 \end{itemize}
             }
@@ -177,11 +179,12 @@ Linux Python backend developer with 15+ years of experience in
             {July 2014 -- May 2016}
             {
                 \begin{itemize}
-                    \item{Optimized network communication subsystem of the
-                          budget control server for advertising campaigns, which
-                          reduced total iteration time by 30\% (Python, Twisted, Numpy, Pandas)}
+                    \item{Optimized the network communication subsystem of the
+                        budget control server for advertising campaigns,
+                    reducing total iteration time by 30\% (Python, Twisted,
+                Numpy, Pandas)}
                     \item{Rolled out Continuous Integration infrastructure
-                          (Jenkins, Trial, pytest, custom testing stands)}
+                        (Jenkins, Trial, pytest, custom testing stands)}
                 \end{itemize}
             }
         \position  % sets the header for a subsection and contains usually body text
@@ -190,14 +193,14 @@ Linux Python backend developer with 15+ years of experience in
             {
                 \begin{itemize}
                     \item{Refactored and developed the data delivery service,
-                          made it more modular, testable and robust
-                          (Python, \acr{BASH}, Django)}
-                    \item{Added performance/time metrics to comply with the established
-                          SLA}
-                    \item{Standardized data transfer configuration DSL that
-                          is used across the company services}
+                        making it more modular, testable, and robust (Python,
+                    \acr{BASH}, Django)}
+                    \item{Added performance/time metrics to comply with the
+                        established SLA}
+                    \item{Standardized data transfer configuration DSL used
+                        across the company services}
                     \item{Optimized file transfer time by integrating UDP-based
-                          file transfer solutions (UDT)}
+                        file transfer solutions (UDT)}
                 \end{itemize}
             }
     }
@@ -215,21 +218,20 @@ Linux Python backend developer with 15+ years of experience in
                 \begin{itemize}
                     \item{Developed an RTSP request redirector (\CPP, Qt)}
                     \item{Developed a video content distribution and publishing
-                          automation tool (\CPP, Qt)}
+                        automation tool (\CPP, Qt)}
                     \item{Integrated a third-party encryption service with the
-                          video content distribution automation tool (VeriMatrix)}
+                        video content distribution automation tool (VeriMatrix)}
                     \item{Improved SmartMedia platform video server seek time by
-                          implementing a faster file segment lookup algorithm
-                          (\CPP, Qt, \acr{STL}, live555)}
-                    \item{Implemented an adaptive streaming client that was used
-                          in Set-Top Boxes (\CPP, Qt, Apple HTTP Streaming)}
+                        implementing a faster file segment lookup algorithm
+                    (\CPP, Qt, \acr{STL}, live555)}
+                    \item{Implemented an adaptive streaming client for use in
+                        Set-Top Boxes (\CPP, Qt, Apple HTTP Streaming)}
                     \item{Developed an interactive build automation tool that
-                          helped developers save time and do fewer mistakes when
-                          building platform components (Python)}
-                    \item{Took part in the implementation of the adaptive
-                          streaming server (Python, Twisted)}
-                    \item{Accompanying protocols: \acr{HTTP}, \acr{XML RPC},
-                          \acr{SOAP}, \acr{RTSP}, \acr{HLS}}
+                        helped developers save time and make fewer mistakes when
+                    building platform components (Python)}
+                    \item{Contributed to the implementation of the adaptive
+                        streaming server (Python, Twisted)}
+                    \item{Keywords: \acr{HTTP}, \acr{XML RPC}, \acr{SOAP}, \acr{RTSP}, \acr{HLS}}
                 \end{itemize}
             }
     }
@@ -246,11 +248,10 @@ Linux Python backend developer with 15+ years of experience in
             {
                 \begin{itemize}
                     \item{Prototyped and developed network applications for
-                          real-time video transmission
-                          (\CPP, Qt, \acr{OPAL}, libjingle)}
-                    \item{Application testing automation (AutoIt, Erlang)}
-                    \item{Accompanying protocols: \acr{XMPP}, \acr{SIP}, \acr{RTP},
-                          \acr{STUN}}
+                        real-time video transmission (\CPP, Qt, \acr{OPAL},
+                    libjingle)}
+                    \item{Automated application testing (AutoIt, Erlang)}
+                    \item{Keywords: \acr{XMPP}, \acr{SIP}, \acr{RTP}, \acr{STUN}}
                 \end{itemize}
             }
     }
@@ -299,6 +300,21 @@ Linux Python backend developer with 15+ years of experience in
 \vspace{-0.7em}
 \begin{minipage}[t]{0.48\textwidth}
 \setlength\abovedisplayskip{0pt}
+\courseplatform
+    {\href{http://bouvet.no/}{Bouvet}}
+    {}
+    {
+        \course
+            {\href{https://drive.google.com/file/d/18wZV--VYKLNQPlHFwWjaSTjtKzo6ZeX9/view}
+                  {Implementing Modern Architecture}}
+            {June 2023}
+            {}
+        \course
+            {\href{https://drive.google.com/file/d/1Swtt5ZdRkRA9mKgkXRK2kUKOhtQyceXH/view}
+                  {Applying DDD and EventStorming in Modern Architecture}}
+            {September 2023}
+            {}
+    }
 \courseplatform
     {\href{http://ita.by}{Information Technology Alliance}}
     {}
@@ -423,13 +439,13 @@ Linux Python backend developer with 15+ years of experience in
         Erlang, Lua, AutoIt, Java, Octave, x86 assembler.
         VCS: hg, git, svn.
         Technologies: Unit Testing, Design Patterns, \acr{UML}.
-        Frameworks: Twisted, Pyramid, Django, Pandas, Scipy.
+        Frameworks: Twisted, Django, Pandas, Scipy.
     }
 
 \inlineheadsection
     {Language}
     {
-        Russian \emph{(native)},  English \emph{(advanced)}, Norwegian \emph{(intermediate)}.
+        Norwegian \emph{(upper intermediate),  English \emph{(advanced)}, Russian \emph{(native)}}.
     }
 
 %\spacedhrule{1.6em}{-0.4em}
